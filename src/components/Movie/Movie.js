@@ -13,13 +13,23 @@ const Movie = ({title, poster_path, vote_average, overview })=>{
     if(vote_average > 7.75){
         className ="green";
     }
+    
+    let posterURL = IMAGEPATH + poster_path;
 
+
+
+    
+    
 
     return (
         <div className ="movie">
 
-        <div className="overview">{overview}</div>
-         <img className="poster" src={IMAGEPATH + poster_path}></img>
+        <div className="overview">
+            <h3>Overview</h3>
+           <div>{overview}</div>
+            
+            </div>
+         <img className="poster" src={posterURL}></img>
    
                 <div className="info">
                 <h4>{title}</h4>

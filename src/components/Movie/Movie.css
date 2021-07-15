@@ -1,10 +1,12 @@
 .movie{
     background-color: rgb(63, 79, 109);
-    max-width:300px;
+    max-width:325px;
     border-radius:10px;
     margin:10px;
+    margin-bottom:30px;
     box-shadow: 0px 4px 5px rgb(0, 0, 0);
     overflow: hidden;
+    position:relative;
 
 }
 
@@ -15,7 +17,7 @@
 .info{
     display:grid;
     grid-template-columns: auto 30px;
-    padding:0px 10px;
+    padding:0px 20px;
     color:white;
 }
 
@@ -39,4 +41,22 @@
 .yellow{
     color: rgb(245, 215, 43);
         font-weight:bold;
+}
+
+.overview{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:2rem;
+    background-color: rgba(0, 0, 0, 0.76);
+    color:white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.overview:hover{
+    opacity:1;
+    cursor:pointer;
 }
